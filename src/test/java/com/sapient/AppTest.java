@@ -5,9 +5,9 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ * Unit test for Check Even.
  */
-public class AppTest 
+public class CheckEvenTest
     extends TestCase
 {
     /**
@@ -15,7 +15,7 @@ public class AppTest
      *
      * @param testName name of the test case
      */
-    public AppTest( String testName )
+    public CheckEvenTest( String testName )
     {
         super( testName );
     }
@@ -31,8 +31,23 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testCheckEven()
     {
-        assertTrue( true );
+        assertTrue( CheckEven.check(4) );
+    }
+
+    public void testCheckZeroEven()
+    {
+        assertTrue( CheckEven.check(0) );
+    }
+    
+    public void testCheckNegativeEven()
+    {
+        assertTrue( CheckEven.check(-4) );
+    }
+
+    public void testCheckOdd()
+    {
+        assertFalse( CheckEven.check(77) );
     }
 }
