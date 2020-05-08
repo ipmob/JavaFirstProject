@@ -11,7 +11,7 @@ import junit.framework.TestSuite;
 */
 
 
-public class ShapesTest 
+public class TestShape 
     extends TestCase
 {
     /**
@@ -19,7 +19,7 @@ public class ShapesTest
      *
      * @param testName name of the test case
      */
-    public ShapesTest( String testName )
+    public TestShape( String testName )
     {
         super( testName );
     }
@@ -31,7 +31,7 @@ public class ShapesTest
     */
     public static Test suite()
     {
-        return new TestSuite( ShapesTest.class );
+        return new TestSuite( TestShape.class );
     }
 
     /**
