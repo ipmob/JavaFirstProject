@@ -1,13 +1,15 @@
 package com.sapient;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+		Command_Line1 cli1 = new Command_Line1();
+		cli1.setData(args);
+		cli1.calData();
+
+		cli1.displayData();
     }
 }
+
